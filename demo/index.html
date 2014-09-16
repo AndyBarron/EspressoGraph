@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>EspressoGraph demo</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='./demo.css'>
+  </head>
+  <body>
+    <svg></svg>
+    <script src='../dist/espressograph.js'></script>
+    <div class='text-center control-panel'>
+      <div class='controls solver btn-group btn-group-lg'>
+        <span class='btn btn-default solver-start'>Set start</span>
+        <span class='btn btn-default solver-goal'>Set goal</span>
+        <span class='btn btn-success solver-solve'>Solve (Dijkstra's)</span>
+        <span class='btn btn-warning solver-clear'>Clear solution</span>
+      </div>
+      <br/>
+      <div class='controls presets btn-group btn-group-md'>
+        <span class='btn btn-info presets-maze-dfs'>Random maze (DFS)</span>
+        <span class='btn btn-info presets-maze-prims'>Random maze (Prim's)</span>
+      </div>
+      <br/>
+      <div class='controls deletion btn-group btn-group-md'>
+        <span class='btn btn-danger controls-delete'>Delete selected node</span>
+        <span class='btn btn-danger controls-delete-all'>Clear all nodes</span>
+      </div>
+    </div>
+    <!-- <script src='//code.jquery.com/jquery-2.1.1.min.js'></script> -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js'></script>
+    <script src='./demo.js'></script>
+  </body>
+</html>

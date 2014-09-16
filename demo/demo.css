@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+.controls {
+  margin-top: 1em;
+}
+svg {
+  display: block;
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 1em;
+  background-color: gray;
+  border: 1px solid white;
+}
+circle {
+  stroke: black;
+  stroke-width: 5;
+  fill: blue;
+}
+circle.path, line.path {
+  stroke: orange;
+}
+circle.start {
+  stroke: red;
+}
+circle.goal {
+  stroke: green;
+}
+circle.selected {
+  fill: cyan;
+}
+line {
+  stroke: black;
+  stroke-width: 10;
+}
