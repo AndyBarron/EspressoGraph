@@ -1,5 +1,6 @@
 /*!
- *  EspressoGraph - v1.0.0
+ *  EspressoGraph - v1.0.1
+ *  github.com/AndyBarron/EspressoGraph
  *  Copyright (c) 2014, Andy Barron
  *  www.andybarron.net
  * 
@@ -266,9 +267,11 @@
   };
 
   var useCommon = (typeof require === 'function') &&
-    (typeof module === 'function') &&
-    (typeof exports === 'function');
-  var useRequire = !useCommon && (typeof require === "function");
+    (typeof module === 'object') &&
+    (typeof exports === 'object');
+  var useRequire = !useCommon &&
+    (typeof require === 'function') &&
+    (typeof define === 'function');
 
   if (useCommon) {
     updateObject(exports, mod);
